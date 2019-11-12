@@ -1,0 +1,96 @@
+block scoping
+
+let foo = 'a';
+{
+    let foo = 'b'
+    console.log(foo);
+}
+console.log(foo)
+give us 'b' then 'a' because
+
+temporal shdowing from inside a block menaks that once execution returns to the intial scope  foo get's it value back
+
+
+// bl0ck scoping two
+let foo; // (A)
+{
+  let foo = 123;
+}
+console.log(foo); // undefined
+
+
+// // Temporal dead zone
+// part 1
+let foo = 'a';
+console.log(foo); // (A)
+{
+  let foo;
+  foo = 'b';
+}
+What happens in line A? // Output: 'a'
+foo is accessed after it was declared and initialized;
+
+// part 2
+
+let foo = 'a';
+{
+  console.log(foo); // (A)
+  let foo;
+  foo = 'b';
+}
+
+What happens in line A?
+is a reference error. foo is accessed before declaration
+
+
+// part 3
+let foo = 'a';
+{
+  let foo;
+  console.log(foo); // (A)
+  foo = 'b';
+}
+
+==> undefined; // foo is accessed  before initialization
+
+let foo = 'a';
+{
+  let foo;
+  foo = 'b';
+  console.log(foo); // (A)
+}
+
+output is 'b'; foo is accessed after declared and initialized in the block scope
+
+
+
+// closures
+const foo = 'a';
+function func() {
+  return foo;
+}
+function returnFunc(foo) {
+  return func;
+}
+const result = returnFunc('b')();
+
+What happens? assert.equal(result, 'a');
+
+What variable a name refers to, can be determined statically.
+That’s why func() will always return the variable in the surrounding scope.
+Returning func() from returnFunc() before calling it, does not change that.
+
+// closure 2
+const foo = 'a';
+function returnFunc(foo) {
+  function func() {
+    return foo;
+  }
+  return func;
+}
+const result = returnFunc('b')();
+
+what happens? assert.equal(result, 'b')
+
+func is a closure and stays connected with its birth environment.
+In that environment, foo is 'b'.

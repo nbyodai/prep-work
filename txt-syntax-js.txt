@@ -1,0 +1,50 @@
+
+Allowed in variable names are: Unicode letters, Unicode digits (١٢٣ are Arabic digits), $, _.
+They must not begin with a digit.
+They can’t be reserved words (which for is).
+
+
+a = 3
+    Is an assignment expression.
+    An expression – which can appear in statement context (“expression statement”).
+const a = 3
+    Variable declarations are (roughly) statements.
+    Statement.
+function () {}
+    Anonymous function expression.
+    Interpreted as an anonymous function declaration, which don’t exist (except: after a default export).
+function func() {}
+    Named function expression.
+    Interpreted as a function declaration.
+{ get prop() {} }
+    Object literal (an expression).
+    Interpreted as a code block. get looks like a prefix operator and causes a syntax error. Without get, you’d have a function call followed by an empty block, which would both be OK.
+if (x < 0) x = -x
+    An if statement.
+    Statement.
+
+
+
+
+
+semicolons and blocks
+//
+
+add semicolon: expression statement not ending with a block.
+no semicolon: statement ending with a block.
+
+a--
+    terminate expression statement a--.
+
+
+const arr = Object.keys({a: 1, b: 2, c: 3})
+[1].forEach(x => console.log(arr[x]))
+
+Output: 'b'
+TypeError
+
+Correct!
+
+    Without a semicolon, everything is parsed as one long line. And Object.keys(···)[1] does not have a method .forEach(). That’s why a TypeError is thrown.
+    With a semicolon at the end of the first line, the output is indeed 'b'.
+

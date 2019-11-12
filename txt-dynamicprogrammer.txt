@@ -1,0 +1,17 @@
+if you have something you can cache then you have dynamic programming
+
+
+sub problems ->
+
+memoization is the caching a return value of a function based on it;s parameters.
+so if the parameters doesn't change then it's memoized
+
+
+dynamic programming
+divide & conquer + memoization
+
+
+1 can be divided into subproblems
+2 recursive solution
+3 are there repetitive subproblems
+4 memoize subproblems

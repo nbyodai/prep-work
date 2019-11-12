@@ -1,0 +1,31 @@
+define something in terms of itself
+
+a function that refers to itself
+
+
+repeated sub tasks to do is where recursion thrives
+
+the computer needs to add memory and remember them
+
+overflow can happen, and this would cause our systems to crashh
+
+
+recursion always has a base cause
+
+and then also return the recursive cause
+
+get lower and lower to get to your base cause
+
+
+any problem that can be solved with recursion can be solved iteratively
+
+
+PROs         CONs
+DRY         Large Stack (memory)
+Readable
+
+Tail Call Optimization
+- a way to stop the problem
+
+converting to tree data structure
+

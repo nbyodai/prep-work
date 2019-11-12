@@ -1,0 +1,38 @@
+linear data structures
+- allow us to traverse one by one in which only one can be reached
+
+STACKS
+- plates, on top of each other, touch the top plate
+- LIFO, last in first out,
+
+examples - very last value, function calls, undo, browser back and forth
+
+
+pop, push, peek
+remove, add, look at top
+
+
+
+Qs
+lines
+FIFO
+ - wait list
+ - uber / lyft /
+ - printer job
+
+nQ - add to line
+dQ - remove from front
+peek - look at front
+
+removing from arrays leads to shifting exercise to update the indexes
+
+STACKS
+Arrays vs LL
+- have cache locality vs scattered all over the place
+- static/dynamic array vs more memory that is dynamic and things can be added
+
+
+
+Qs
+Arrays vs LL
+LL is better

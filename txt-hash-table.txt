@@ -1,0 +1,31 @@
+A hash table exists across computer science as python dictonaries, javascript objects
+
+it allows to store data in memory as key-value pair
+
+where the key is passed through something known as a hash function
+
+a hashfunction is a one way procedure that takes an input and returns an encoded string.
+
+It gives the same output encoding for the same input everytime (Imdempotent)
+
+
+hashfunction is called whenee=ver we add a property to memory or retrieve from memory
+also map the encoded string to a memory addresses
+
+
+
+with hash tables we cannot avoid collisions
+with enough data with limited memory collissions will happen
+
+insert O(1)
+lookup O(1) although it might be O(n) depending on the hash function
+search O(1)
+delete O(1)
+two common ways to deal with collisions -
+- linkedlist
+
+in JS in an ob ject we can only save string keyss
+MAP can store anything as keys like function or arrays (it maintains order too)
+Set is like Map but it only stores keys.
+
+it has unordered

@@ -1,0 +1,46 @@
+is represented by a set of nodes, and contain two elements
+- head - value
+- pointer - that links to the next element
+
+can be sorted or unsorted
+
+
+vs array
+ - we have to traverse to search O(n) while 0(1) in array
+ - iterating is slower
+ - inserting is a lot better
+
+
+ vs hash tables
+ - there is an order to ll that doesn't exist in hash tables
+- insert is the same
+- delete is same
+prepend O(1)
+append O(1)
+delete O(n)
+insert O(n)
+lookup O(n)
+
+
+POINTER is a reference to another place in memory
+
+garbage collection is removing things in memory with nothing pointing/referencing them
+
+
+doubly linked list allows us to traverse our lists backwards
+exactly the same as singly linked lists but contains extra information to pointer back wards
+
+it is a very low level data structures used in different data structures like stacks and queues
+
+fast insertion
+fast deletion
+ordered
+flexible size
+
+uses
+
+but slow look up
+more memory
+
+browser
+file system

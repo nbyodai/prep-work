@@ -1,0 +1,65 @@
+Good code is
+- readable
+- scalable
+
+
+algorithms are the instructions we give our computers to give us the results we want
+Big O notation is how we measure the scalability of those instructions without having to worry about the specifics/details of the hardware
+that is executing those instructions or the language that it comes in
+
+how long algorithms will take to run
+when we grow bigger and bigger, how slow do our instructions take to complete
+it doesnt measure things in seconds
+
+
+
+
+linear O(n)
+- it takes linear time to run our steps
+- as our input increases so also does the steps it takes to run our
+
+constant O(1)
+- it takes constant time to run our steps
+- our increasing input does not change the number of steps that it takes
+
+quadratic O(n^2)
+- every time the number of elements increase, it squares our input
+-
+
+RULE 1
+- worst case scenario
+RULE 2
+- Drop the constants
+RULE 3
+- Different terms for inputs
+RULE 4
+- Drop non dominant terms
+
+
+scalable - speed (time) | memory
+
+
+space complexity
+
+- how much additional space is being added
+- 0(1) if  constant space is added
+- O(n) creating a datastructure with extra space.  like creating an array and index creation happening insdie a loop
+
+
+what is the big o of a method call of a inbuilt method? it depends on the implementation of said method in that langugage
+
+
+
+HOW TO SOLVE PROBLEMS
+===========
+
+
+Analytic skills
+ - thought process
+
+Coding skills
+-
+
+Technical skills
+
+Communication skills

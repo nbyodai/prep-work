@@ -1,0 +1,12 @@
+(elemental)
+Bubble
+selection
+insertion (cases for extreme speed)
+  almost sorted // already sorted
+------------
+(complex)
+merge
+quick
+
+what are the trade offs with these sorting algorithms
+finish the algorithms lecture

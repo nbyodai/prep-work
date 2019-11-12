@@ -1,0 +1,104 @@
+Tail call optimizations is a way to handle functions calls in a programming language without increasing
+stack growth (saving memory)
+
+You knoa  a function  call is a tail call if it is in the tail position.
+
+
+the way the function is called does not matter
+
+- func()
+- obj.method()
+- func,call()
+- func.apply()
+
+Tail call in Expressions
+
+arrow functions can have expressions as bodies.  here's how you know tail calls
+- conditional operator ? : like const a = x => x ? f() : g(); both f() and g() are in tail calls
+- logical OR operator (||) like in const a = () => f() || g(); g() is in a tail call
+- logical AND operator (&&) like in const a = () => f() && g(); g() is in tail call;
+
+
+const a = () => f() && g();
+quivalent to const a = > {
+    let fResult = f()
+
+    if(!fResult) {
+        return fResult
+    } else {
+        return g();
+    }
+}
+- comma operator (, ) like in const a = () => (f() , g()); is equivalent to
+const a = () => {
+    f();
+    return g();
+}
+you can see that it is g() that is in a tail call
+
+
+
+Tail call in statements
+found in the following compound statements
+- blocks
+- do-while, while, for
+- if , in the else//then clause
+- swith - in the body
+-try-catch in the catch clause
+- try-finally, try-catch-finally, in the finally clause. it is a context that can't be o[ptimzies away
+]
+
+of all atomoic (non compound statements) only return can contain a tail call
+return <<expr>>; <- contains a tail call if expr contains a tail call
+
+
+Tail calls only work in strict mode because non strict mode allows access to func.arguments, and func.caller to work
+
+
+//  soo functions are never in tail position
+
+function foo() {
+    bar(); // this is not a tail call
+}
+ ===
+function foo() {
+    bar();
+    return undefined;
+}
+
+convert to tail call
+
+
+funciton foo() {
+    return bar()
+}
+
+ // Tail recursive functions is one that has it's main recursive part in tail positions
+
+
+ for example
+
+ function factorial(x) {
+    if(x <= 0 ) {
+        return 1;
+    } else {
+        return x * factorial(x-1)
+    }
+ }
+
+ is not tail recursive.
+
+
+it can however be made tail recursive if we have it in a form
+
+
+function factorial {
+    retiurn facRec(n, 1);
+}
+function facRec(x, acc) {
+    if (x<=1) {
+        return acc;
+    } else {
+        return facRec(x-1, x*acc);
+    }
+}

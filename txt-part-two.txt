@@ -1,0 +1,48 @@
+Data structures is the way we organise our data
+
+
+Operations on Data structures
+Insertion
+Deletion
+Traversal
+Searching
+Sorting
+Access
+
+
+ARRAYS (lists)
+- organises items sequentially, one after the other
+- since store contiguosly, they have the smallest footprint
+
+push O(1)
+pop O(1)
+unshift O(n)
+splice O(n)
+
+
+Static Arrays are fixed in size
+
+
+Dynamic Arrays allows us not to think about memory management
+- expands as the elements are added.
+
+
+
+segway -
+reference types
+- objects in javascript (referrence types) hold addressess to the data type that is then typciaclly created by the programmer
+- that is why [] === [] gives false; because both are creating new addresses/references
+
+Context vs scope
+- scope exists inside curly braces for javascript
+- context lets us know what object we are/using
+
+
+
+
+
+ARRAYS
+- in javascript are just objects with integer based keys
+
+
+thing of strings as Arrays
