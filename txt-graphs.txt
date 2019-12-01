@@ -1,0 +1,51 @@
+each node is connected egdes
+
+graphs can be used to represent friendships,
+
+
+linked list are a type of tree, trees are a type of graphs
+
+
+Directed vs Undirected graphs
+
+- weighted vs unweighted
+
+- cyclic vs acyclic
+
+
+Directed Acyclic Graph (DAG)
+
+
+
+    2 ------ 0
+  /  \
+ /    \
+/      \
+1 ----- 3
+
+// edge list simply states the connections that exisg in the graph
+const edgeListGraph = [[0,2], [2,1], [2,3], [1, 3]]
+
+// adjacency list here index or key is the node and the value is it's neighbours
+const adjacentListGraph = [[2], [2,3],  [0, 1, 3], [1,2]]
+const adjacencyObjectVersion = {
+    0: [2],
+    1: [2,3],
+    2: [0, 1, 3],
+    3: [1,2]]
+}
+
+// Adjacent Matrix
+maps the weights or 1|0 if the index or the key maps the others in the it
+const adjacencyMatrixGraph = [
+    [0, 0, 1, 0],
+    [0, 0, 1, 1],
+    [1, 1, 0, 1],
+    [0, 1, 1, 0],
+]
+const adjacencyMatrixGraphObhectVersion = {
+    0: [0, 0, 1, 0],
+    1: [0, 0, 1, 1],
+    2: [1, 1, 0, 1],
+    3: [0, 1, 1, 0],
+}

@@ -1,0 +1,89 @@
+tree datastructure
+
+- dom
+- facebook comments
+- family trees/
+- abstract syntax tree
+    how computer understands what we wrote down
+
+
+root element
+linked list is a tree with one single path
+
+a node can always point down, they don't have to reference their parent
+
+binary tree
+- rules
+1. each node can only have either 0,1,2 child nodes
+2. each child can only have one parent
+
+perfect binary trees
+- no node has one child
+- all the leaf nodes are filled
+- the bottom layer is filled
+properties
+- all the nodes double as we go down levels
+- number of nodes of the last level is equal to the number of nodes before it + 1
+    - about half of the nodes are on the last level.
+
+Full binary trees
+- a node has zero or two children never one child
+
+
+O(log n) just means that decision for where to go next in our search/iteration can only be one
+log 100 = 2
+100 = 10^2
+
+
+Binary search trees
+- preserves relationships
+
+
+Unbalanced Binary search tree
+- it could become a linked list and search then becomes O(n)
+
+PRO()
+better than O(n) (assuming balanced)
+also ordered
+flexible size (becuase naodes can be placed anywhere in memory)
+
+CONs
+- no 0(1) (traversal is necessary)
+
+
+Inserts and deletes are faster than array because arrays have to shift if not adding to the end so O(n)
+
+vs Hash tables
+sorted data
+parent child relationships
+
+vs
+lookup and insertion
+
+
+avl and red black trees are implementations of binary search trees that make it so that we don't have
+edge cases that make BST work liked linked lists (linear time)
+
+
+Binary Heaps
+
+every node is higher than the values of the nodes below it
+useful in priority queues
+lookup is O(n) for binary Heaps
+
+really great for comparitive operations
+
+left to right insertion
+parent is always greater than the children
+
+
+very good for Priority queues
+
+- most severe symptoms get treated first
+- airplane
+max Heap top root is biggest vs min heap top root node is smallest
+
+
+Trie tree is good for text searching and autocompletion
+good for speed and space completion
+

@@ -28,7 +28,7 @@ garbage collection is removing things in memory with nothing pointing/referencin
 
 
 doubly linked list allows us to traverse our lists backwards
-exactly the same as singly linked lists but contains extra information to pointer back wards
+exactly the same as singly linked lists but contains extra information to point back wards
 
 it is a very low level data structures used in different data structures like stacks and queues
 

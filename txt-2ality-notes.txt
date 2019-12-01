@@ -94,3 +94,112 @@ what happens? assert.equal(result, 'b')
 
 func is a closure and stays connected with its birth environment.
 In that environment, foo is 'b'.
+
+
+primitives are boolean, numbers(js only has a single type for numbers i.e 123, 1.21), strings (js doesn't have a type for single characters)
+assert(received, expected)
+
+console.log() // logs to standard output
+console.error() // logs to standard error
+
+booleans
+&& AND
+|| OR
+
+mathematics
++ - \ *
+
+strings
++ // concatenate
+
+comparison
+<(>), <=(>=), ===, !==
+
+const addBlock = (a, b) => { return a + b };
+const addXprsn = (a, b) => a + b;
+
+
+each module is a single file
+
+import * as path from 'path' // import whole module as namespace object `path`
+import { isTextFilePath } from 'path' // import a single export
+
+
+where to put semicolons
+
+- At the end of a statement; const x = 123;
+func();
+
+however, adding a semicolon after such a statement is not a syntax error - it is intepreted as an empty statement
+
+
+keywords ex
+await break default debugger const var void typeof
+
+tokens
+enum interface protected private public implements keywords
+
+literals
+true false null
+
+not reserved but avoided
+Infinity undefined NaN async
+
+
+
+statements are code that can be executed and do something
+
+expressions are evaluated to get some value
+expressions can be used as statements
+
+
+// function declaration === statement can be executed to get value
+function id(x) {
+  return x;
+}
+
+
+function expression === expression function has to be evaluated to give id a value
+const id = function me(x) {
+  return x;
+};
+
+
+const obj = {} is expression that creates an empty object
+
+{
+} a block is a statement
+
+
+function statements as expressions have to be wrapped in paranthesis
+
+Rules
+
+each statement ends with a semicolon excepts statement ends with a block }
+
+in this case const nemor = () => {}; the statement is what ends with a semicolon but the expression embedded within it is what has the block
+
+
+the body of a control statement (if,while, for) is itself a statement.
+
+empty body is while(condition);
+or while(condition) {}
+
+javascript automatically adds ; after a return statement ? why? to protect against accidentally returning a value in a line after a return.
+
+so
+return
+{
+  first: 'bu'
+};
+
+is parsed as
+
+return;
+{
+  first: 'bu';
+}
+;
+
+
+ console.log prints to stdout and at the end akways prints a new line
