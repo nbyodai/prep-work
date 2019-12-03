@@ -12,16 +12,6 @@ const summer = (list, start, end) => {
     return sum.reduce((acc, x) => acc + x, 0);
 }
 
-const findPosition = (list, val) => {
-    // binary search the list for the index of val
-    let result = null;
-    while(result === null) {
-        result = iterativeFunction(list, val)
-        val -= 1;
-    }
-    return result;
-}
-
 
 const iterativeFunction = (list, val) => {
     let start = 0;
@@ -41,11 +31,19 @@ const iterativeFunction = (list, val) => {
     return  null
 }
 
+const findPosition = (list, val) => {
+    // binary search the list for the index of val
+    let result = null;
+    while(result === null) {
+        result = iterativeFunction(list, val)
+        val -= 1;
+    }
+    return result;
+}
+
 function solveProblem(list, range) {
     const startIndex = findPosition(list, range[0])
     const endIndex = findPosition(list, range[1])
-    console.log(startIndex)
-    console.log(endIndex)
 
     return summer(list, startIndex, endIndex)
 }
