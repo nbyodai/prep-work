@@ -203,3 +203,25 @@ return;
 
 
  console.log prints to stdout and at the end akways prints a new line
+
+CHAPTER 10
+`let` are mutable
+let i;
+i = 0 ;
+i = i + 1;
+let i = 0;
+
+const variables are immutable
+- const only means that binding is immutable. name and value. (but the value itself maybe mutable like an object)
+- const can be used in for-of loops. why because the binding in each iteration is fresh
+const arr = ['hello', 'world']
+for (const elem of arr) {
+    console.log(elem) 'hello', 'world'
+}
+but to be used as let in plain for loops
+
+what is a direct scope? accessible where they are nearest surrounding blocks
+inner scope? any other scopes one or more nested below
+outer scopes? higher level scopes
+
+static
