@@ -1,3 +1,4 @@
+// recursive
 function shapeArea(n) {
   if(n <= 1) {
       return 1
@@ -8,5 +9,5 @@ function shapeArea(n) {
 
 
 function shapeArea2(n) {
-  return n*n+ (n-1)*(n-1)
+  return n*n + (n-1)*(n-1)
 }
