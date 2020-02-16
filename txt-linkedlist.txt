@@ -13,13 +13,13 @@ vs array
 
  vs hash tables
  - there is an order to ll that doesn't exist in hash tables
-- insert is the same
-- delete is same
-prepend O(1)
-append O(1)
-delete O(n)
-insert O(n)
-lookup O(n)
+ - insert is the same
+ - delete is same
+
+insert O(1) (pre-pend, append)
+delete O(1)
+lookup O(n) (search)
+access O(n) (indexing)
 
 
 POINTER is a reference to another place in memory

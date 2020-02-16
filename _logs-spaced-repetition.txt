@@ -1,0 +1,12 @@
+spaced repetition
+16/02
+    - part-one
+    - part-two
+    - recursion
+    - tail-call-optimization
+    - stacks
+        - impl
+    - LL
+        - impl
+
+    

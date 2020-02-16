@@ -7,14 +7,14 @@ repeated sub tasks to do is where recursion thrives
 
 the computer needs to add memory and remember them
 
-overflow can happen, and this would cause our systems to crashh
+overflow can happen, and this would cause our systems to crash
 
 
-recursion always has a base cause
+recursion always has a base case
 
-and then also return the recursive cause
+and then also return the recursive case
 
-get lower and lower to get to your base cause
+get lower and lower to get to your base case
 
 
 any problem that can be solved with recursion can be solved iteratively

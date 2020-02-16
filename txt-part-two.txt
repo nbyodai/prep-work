@@ -1,18 +1,18 @@
-Data structures is the way we organise our data
+Data structures is the way we organize our data
 
 
 Operations on Data structures
 Insertion
 Deletion
 Traversal
-Searching
+Searching/look up
 Sorting
 Access
 
 
 ARRAYS (lists)
-- organises items sequentially, one after the other
-- since store contiguosly, they have the smallest footprint
+- organizes items sequentially, one after the other
+- since storage is contiguous, they have the smallest footprint
 
 push O(1)
 pop O(1)
@@ -30,7 +30,7 @@ Dynamic Arrays allows us not to think about memory management
 
 segway -
 reference types
-- objects in javascript (referrence types) hold addressess to the data type that is then typciaclly created by the programmer
+- objects in javascript (reference types) hold addresses to the data type that is then typically created by the programmer
 - that is why [] === [] gives false; because both are creating new addresses/references
 
 Context vs scope

@@ -1,7 +1,7 @@
 Tail call optimizations is a way to handle functions calls in a programming language without increasing
 stack growth (saving memory)
 
-You knoa  a function  call is a tail call if it is in the tail position.
+You know a function call is a tail call if it is in the tail position.
 
 
 the way the function is called does not matter
@@ -20,7 +20,7 @@ arrow functions can have expressions as bodies.  here's how you know tail calls
 
 
 const a = () => f() && g();
-quivalent to const a = > {
+equivalent to const a = > {
     let fResult = f()
 
     if(!fResult) {
@@ -42,13 +42,13 @@ Tail call in statements
 found in the following compound statements
 - blocks
 - do-while, while, for
-- if , in the else//then clause
-- swith - in the body
--try-catch in the catch clause
-- try-finally, try-catch-finally, in the finally clause. it is a context that can't be o[ptimzies away
+- if, in the else//then clause
+- switch - in the body
+- try-catch in the catch clause
+- try-finally, try-catch-finally, in the finally clause. it is a context that can't be optimized away
 ]
 
-of all atomoic (non compound statements) only return can contain a tail call
+of all atomic (non compound statements) only return can contain a tail call
 return <<expr>>; <- contains a tail call if expr contains a tail call
 
 
@@ -69,7 +69,7 @@ function foo() {
 convert to tail call
 
 
-funciton foo() {
+function foo() {
     return bar()
 }
 
@@ -92,8 +92,8 @@ funciton foo() {
 it can however be made tail recursive if we have it in a form
 
 
-function factorial {
-    retiurn facRec(n, 1);
+function factorial(n) {
+    return facRec(n, 1);
 }
 function facRec(x, acc) {
     if (x<=1) {

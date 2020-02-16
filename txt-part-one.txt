@@ -9,7 +9,7 @@ that is executing those instructions or the language that it comes in
 
 how long algorithms will take to run
 when we grow bigger and bigger, how slow do our instructions take to complete
-it doesnt measure things in seconds
+it does not measure things in seconds
 
 
 
@@ -43,10 +43,10 @@ space complexity
 
 - how much additional space is being added
 - 0(1) if  constant space is added
-- O(n) creating a datastructure with extra space.  like creating an array and index creation happening insdie a loop
+- O(n) creating a data structure with extra space.  like creating an array and index creation happening inside a loop
 
 
-what is the big o of a method call of a inbuilt method? it depends on the implementation of said method in that langugage
+what is the big o of a method call of a inbuilt method? it depends on the implementation of said method in that language
 
 
 
